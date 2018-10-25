@@ -1,0 +1,18 @@
+plugins {
+  id 'java-library'
+  id 'com.github.spotbugs' version '1.6.5'
+}
+
+repositories {
+    mavenCentral()
+}
+
+spotbugs {
+    toolVersion = '3.1.8'
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:25.0-jre'
+    implementation 'com.github.spotbugs:spotbugs-annotations:3.1.8'
+}
+
